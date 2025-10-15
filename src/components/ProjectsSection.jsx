@@ -6,7 +6,8 @@ const projects = [
     title: "Reveria - Movie Explorer",
     description:
       "A responsive movie discovery app using React, Tailwind CSS, and the TMDB API, with a dynamic trending section powered by Appwrite.",
-    image: "/projects/reveria-mockup.jpg", // This now points to your new image
+    
+    image: "/projects/reveria-app.png", 
     tags: ["React.js", "Tailwind CSS", "Appwrite", "API"],
     demoUrl: "https://reveria-7c41.vercel.app/",
     githubUrl: "https://github.com/Mahesh-git888/Reveria",
