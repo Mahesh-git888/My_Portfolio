@@ -6,7 +6,6 @@ const projects = [
     title: "Reveria - Movie Explorer",
     description:
       "A responsive movie discovery app using React, Tailwind CSS, and the TMDB API, with a dynamic trending section powered by Appwrite.",
-    
     image: "/projects/reveria-app.png", 
     tags: ["React.js", "Tailwind CSS", "Appwrite", "API"],
     demoUrl: "https://reveria-7c41.vercel.app/",
@@ -16,9 +15,9 @@ const projects = [
     id: 2,
     title: "Resumify",
     description:
-      "An AI integrated Full stack project for the resume creation and editing.",
-    image: "/public/RESUUMIFY.png,
-    tags: ["FULL STACK", "MERN", "GEMINI"],
+      "An AI-integrated full-stack application for resume creation and editing.",
+    image: "/RESUUMIFY.png", // FIXED PATH
+    tags: ["Full Stack", "MERN", "Gemini"],
     demoUrl: "https://resumify-bice.vercel.app/",
     githubUrl: "https://github.com/Mahesh-git888/Language_Classification_Model",
   },
@@ -38,20 +37,20 @@ export const ProjectsSection = () => {
   return (
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
+        
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          {" "}
-          Featured <span className="text-primary"> Projects </span>
+          Featured <span className="text-primary">Projects</span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
+          Here are some of my recent projects. Each one was crafted with
+          attention to detail, performance, and user experience.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, key) => (
+          {projects.map((project) => (
             <div
-              key={key}
+              key={project.id}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
               <div className="h-48 overflow-hidden">
@@ -74,30 +73,31 @@ export const ProjectsSection = () => {
                   ))}
                 </div>
 
-                <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
+                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
                 <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
-                <div className="flex justify-between items-center">
-                  <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <Github size={20} />
-                    </a>
-                  </div>
+
+                <div className="flex space-x-3">
+                  <a
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                  >
+                    <ExternalLink size={20} />
+                  </a>
+
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                  >
+                    <Github size={20} />
+                  </a>
                 </div>
+
               </div>
             </div>
           ))}
@@ -113,6 +113,7 @@ export const ProjectsSection = () => {
             Check My Github <ArrowRight size={16} />
           </a>
         </div>
+
       </div>
     </section>
   );
