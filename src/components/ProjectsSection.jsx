@@ -14,12 +14,12 @@ const projects = [
   },
   {
     id: 2,
-    title: "Language Classification",
+    title: "Resumify",
     description:
-      "A machine learning project to classify Indian languages using NLP features and ensemble models.",
-    image: "/projects/language-classification.png",
-    tags: ["Python", "NLP", "Random Forest"],
-    demoUrl: "#",
+      "An AI integrated Full stack project for the resume creation and editing.",
+    image: "/public/RESUUMIFY.png,
+    tags: ["FULL STACK", "MERN", "GEMINI"],
+    demoUrl: "https://resumify-bice.vercel.app/",
     githubUrl: "https://github.com/Mahesh-git888/Language_Classification_Model",
   },
   {
